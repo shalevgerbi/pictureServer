@@ -1,0 +1,5 @@
+/.idea
+/__pycache__
+demo.semantic
+mnist.h5
+model.h5
