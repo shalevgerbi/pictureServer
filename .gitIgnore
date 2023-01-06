@@ -3,3 +3,9 @@
 demo.semantic
 mnist.h5
 model.h5
+/.venv
+/objects
+MusicToNoteModel.h5
+my_model.h5
+combi_20_14_h5.h5
+distorted_model_23_29_21.h5
