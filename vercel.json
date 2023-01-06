@@ -9,12 +9,15 @@
     "routes": [
         {
             "src": "(.*)",
-            "dest": "server.py",
-            "functions": {
-                "api/**/*.py": {
-                  "excludeFiles": "./AI/*"
-                }
-              }
+            "dest": "server.py"
+       
         }
-    ]
+    ],
+    "functions": {
+        "api/**/*.py": {
+          "excludeFiles": "./AI/*"
+        }
+      }
+    
   }
+  
