@@ -6,5 +6,5 @@ tensorflow
 keras
 Pillow
 numpy
-flask_cors
-
+flask-cors
+gunicorn
