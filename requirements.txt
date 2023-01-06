@@ -2,7 +2,6 @@ flask
 tensorflow
 matplotlib
 scipy
-scipy.io
 tensorflow
 keras
 PIL
