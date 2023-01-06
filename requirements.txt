@@ -4,7 +4,7 @@ matplotlib
 scipy
 tensorflow
 keras
-PIL
+Pillow
 base64
 numpy
 flask_cors
