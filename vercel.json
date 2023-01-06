@@ -10,6 +10,13 @@
         {
             "src": "(.*)",
             "dest": "server.py"
-        }
+        },
+        {
+            "functions": {
+              "api/**/*.py": {
+                "excludeFiles": [ "**/*.html", "./AI/*"]
+              }
+            }
+          }
     ]
   }
