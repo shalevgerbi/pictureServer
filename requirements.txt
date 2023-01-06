@@ -5,7 +5,6 @@ scipy
 tensorflow
 keras
 Pillow
-base64
 numpy
 flask_cors
 
