@@ -1,14 +1,10 @@
 flask
-json
-
 tensorflow
 matplotlib
 scipy
 scipy.io
 tensorflow
-
 keras
-
 PIL
 base64
 numpy
