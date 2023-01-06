@@ -14,7 +14,7 @@
         {
             "functions": {
               "api/**/*.py": {
-                "excludeFiles": [ "**/*.html", "./AI/*"]
+                "excludeFiles": "./AI/*"
               }
             }
           }
