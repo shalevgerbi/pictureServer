@@ -8,16 +8,11 @@
     ],
     "routes": [
         {
-            "src": "(.*)",
+            "src": "(server.py)",
             "dest": "server.py"
        
         }
-    ],
-    "functions": {
-        "api/**/*.py": {
-          "excludeFiles": "./AI/*"
-        }
-      }
+    ]
     
   }
   
