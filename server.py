@@ -1,7 +1,6 @@
 
 from flask import Flask, request, jsonify
 import io
-import json
 from io import BytesIO
 import tensorflow as tf
 from matplotlib import pyplot as plt
@@ -15,7 +14,6 @@ from PIL import Image, ImageChops, ImageOps
 import base64
 import numpy as np
 from flask_cors import CORS
-from objects.midi import MyMidiFile
 
 print(tf.__version__)
 app = Flask(__name__)
