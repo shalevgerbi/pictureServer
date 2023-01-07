@@ -471,11 +471,11 @@ def get_model():
     print("Picture model loaded")
     # "C:/Users/shalev/PycharmProjects/pictureServer/my_model.h5"
     # audio model
-    audioModel = load_model("C:/Users/shalev/PycharmProjects/pictureServer/MusicToNoteModel.h5")
-    prediction_audioModel = keras.models.Model(
-        audioModel.get_layer(name="dense_4").input, audioModel.get_layer(name="activation_7").output
-    )
-    print("Audio model loaded")
+    # audioModel = load_model("C:/Users/shalev/PycharmProjects/pictureServer/MusicToNoteModel.h5")
+    # prediction_audioModel = keras.models.Model(
+    #     audioModel.get_layer(name="dense_4").input, audioModel.get_layer(name="activation_7").output
+    # )
+    # print("Audio model loaded")
     # audioModel.summery()
 
 
@@ -483,36 +483,36 @@ def get_model():
 
     # print(key)
     # print(val['pitch'])
-    sample_rate, samples = wavfile.read('C:/Users/shalev/PycharmProjects/pictureServer/littleY.wav')
-    f, t, Sxx = signal.spectrogram(samples, 16000, nperseg=16000)
-    # notes.append([Sxx, val['pitch']])
-
-    samplesList = []
-    # for i in range(0,len(f)):
-    #     for j in range(0,len(t)):
-    #         samplesList.append((Sxx[i,j:j+4]))
-    print("Sxx.shape",Sxx.shape)
-    print("f.shape", f.shape)
-    print("t.shape", t.shape)
-    print("samplesList",samplesList)
-    # for i in range(0,len(t)):
+    # sample_rate, samples = wavfile.read('C:/Users/shalev/PycharmProjects/pictureServer/littleY.wav')
+    # f, t, Sxx = signal.spectrogram(samples, 16000, nperseg=16000)
+    # # notes.append([Sxx, val['pitch']])
+    #
+    # samplesList = []
+    # # for i in range(0,len(f)):
+    # #     for j in range(0,len(t)):
+    # #         samplesList.append((Sxx[i,j:j+4]))
+    # print("Sxx.shape",Sxx.shape)
+    # print("f.shape", f.shape)
+    # print("t.shape", t.shape)
+    # print("samplesList",samplesList)
+    # # for i in range(0,len(t)):
+    # #     if i+4 < len(t):
+    # #         data = expand_dims(Sxx[:, i:i+4])
+    # #         samplesList.append(data)
+    # for i in range(0,len(t),4):
     #     if i+4 < len(t):
     #         data = expand_dims(Sxx[:, i:i+4])
     #         samplesList.append(data)
-    for i in range(0,len(t),4):
-        if i+4 < len(t):
-            data = expand_dims(Sxx[:, i:i+4])
-            samplesList.append(data)
 
     # data = resize_image(data, True)
     # Sxx =Sxx.
     # print(data.shape)
     predictionArr = []
-    for sample in samplesList:
-        predictionArr.append(prediction_audioModel.predict(sample))
-    for pred in predictionArr:
-        print(np.argmax(pred))
-    print(predictionArr)
+    # for sample in samplesList:
+    #     predictionArr.append(prediction_audioModel.predict(sample))
+    # for pred in predictionArr:
+    #     print(np.argmax(pred))
+    # print(predictionArr)
     # predictions = prediction_audioModel.predict(data)
     # print(predictions)
 print("loading model")
