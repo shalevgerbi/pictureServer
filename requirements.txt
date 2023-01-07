@@ -2,7 +2,6 @@ flask
 tensorflow
 matplotlib
 scipy
-tensorflow
 keras
 Pillow
 numpy
