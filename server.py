@@ -472,7 +472,7 @@ def get_model():
     # "C:/Users/shalev/PycharmProjects/pictureServer/my_model.h5"
     # audio model
     # audioModel = load_model("C:/Users/shalev/PycharmProjects/pictureServer/MusicToNoteModel.h5")
-    # prediction_audioModel = keras.models.Model(
+    ## prediction_audioModel = keras.models.Model(
     #     audioModel.get_layer(name="dense_4").input, audioModel.get_layer(name="activation_7").output
     # )
     # print("Audio model loaded")
